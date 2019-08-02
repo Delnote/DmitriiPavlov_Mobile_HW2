@@ -1,0 +1,19 @@
+5.	Modify existing tests to run on a real device. What should be changed?
+
+We need to change deviceName from emulator-5554 to real device name,
+which we can find through cmd using adb commands.
+Add Appium capability with real deviceName properties.
+
+
+6.	Connect a real device to Appium (describe required actions) and run tests.
+Are there any difference with run on emulator?
+
+We need to connect real device into work station through USB cord.
+Also we can add Appium capabilities with proper deviceName.
+
+There are some differences:
+    1. we need to have real device with expected parameters,
+        emulator can be run on your workstation with all you need parameters and settings
+    2. emulator use lots of workstation resources and makes work slowly
+    3. real device faster than emulator
+    4. emulator doesn't have all functionality as real device and can have minor differences in behavior
