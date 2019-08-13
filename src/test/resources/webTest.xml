@@ -4,7 +4,7 @@
     <test name="WebTest">
         <groups>
             <run>
-                <include name="native"/>
+                <include name="web"/>
             </run>
         </groups>
         <classes>

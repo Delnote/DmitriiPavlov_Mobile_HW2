@@ -23,7 +23,7 @@ public class DriverSetup extends TestProperties {
     private String DEVICE;
 
     // constructor initializes properties on driver creation
-    protected DriverSetup(String type) throws IOException {
+    protected void driverSetUp(String type) throws IOException {
         AUT = getProp(type, "aut");
         String t_sut = getProp(type, "sut");
         SUT = t_sut == null ? null : "http://" + t_sut;

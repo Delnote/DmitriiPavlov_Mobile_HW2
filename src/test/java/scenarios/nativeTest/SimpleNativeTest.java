@@ -14,12 +14,8 @@ public class SimpleNativeTest extends Hooks {
 
     private String appPackageName = "com.example.android.contactmanager:id/";
 
-    public SimpleNativeTest() throws IOException {
-        super("native");
-    }
-
-    @Test(description = "example of simple native test")
-    public void webTest() {
+    @Test(description = "example of simple native test", groups = "native")
+    public void nativeTest() {
 
         driverSingle.findElement(By.id(appPackageName + ADD_CONTACT_BUTTON.getLocator())).click();
 
